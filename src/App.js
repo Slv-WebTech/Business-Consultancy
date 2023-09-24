@@ -6,6 +6,7 @@ import Collaborations from "./consultancy/Collaborations";
 import Blogs from "./consultancy/Blogs";
 import Services from "./consultancy/Services";
 import Events from "./consultancy/Events";
+import Colleges from "./consultancy/Colleges";
 
 function App(props) {
   return (
@@ -453,6 +454,7 @@ function App(props) {
       </main>
       <Blogs />
       <Statics />
+      <Colleges />
       <Services />
       <Events />
       <Collaborations />
