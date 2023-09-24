@@ -1,13 +1,9 @@
 import React from "react";
-import Navbar from "./consultancy/Navbar";
-import Footer from "./consultancy/Footer";
-import Statics from "./consultancy/Number";
-import Collaborations from "./consultancy/Collaborations";
-import Blogs from "./consultancy/Blogs";
-import Services from "./consultancy/Services";
-import Events from "./consultancy/Events";
 
-function App(props) {
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
+export default function Landing() {
   return (
     <>
       <Navbar transparent />
@@ -242,7 +238,7 @@ function App(props) {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("./assets/img/team-1-800x800.jpg").default}
+                    src={require("../public/team1.jpg").default}
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
@@ -267,7 +263,7 @@ function App(props) {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("./assets/img/team-2-800x800.jpg").default}
+                    src={require("../public/team2.jpg").default}
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
@@ -289,7 +285,7 @@ function App(props) {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("./assets/img/team-3-800x800.jpg").default}
+                    src={require("../public/team3.jpg").default}
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
@@ -314,7 +310,7 @@ function App(props) {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("./assets/img/team-4-470x470.png").default}
+                    src={require("../public/team4.png").default}
                     className="shadow-lg rounded-full max-w-full mx-auto"
                     style={{ maxWidth: "120px" }}
                   />
@@ -451,14 +447,7 @@ function App(props) {
           </div>
         </section>
       </main>
-      <Blogs />
-      <Statics />
-      <Services />
-      <Events />
-      <Collaborations />
       <Footer />
     </>
   );
 }
-
-export default App;

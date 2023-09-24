@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navbar from "./consultancy/Navbar";
 import Footer from "./consultancy/Footer";
 import Statics from "./consultancy/Number";
@@ -7,7 +8,7 @@ import Blogs from "./consultancy/Blogs";
 import Services from "./consultancy/Services";
 import Events from "./consultancy/Events";
 
-function App(props) {
+export default function Home() {
   return (
     <>
       <Navbar transparent />
@@ -460,5 +461,3 @@ function App(props) {
     </>
   );
 }
-
-export default App;
