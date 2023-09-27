@@ -1,21 +1,73 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
-];
-const stats = [
-  { name: "Offices worldwide", value: "12" },
-  { name: "Full-time colleagues", value: "300+" },
-  { name: "Hours per week", value: "40" },
-  { name: "Paid time off", value: "Unlimited" },
-];
+function Number() {
+  const [countdown1, setCountdown1] = useState(0);
+  const [countdown2, setCountdown2] = useState(0);
+  const [countdown3, setCountdown3] = useState(0);
+  const [countdown4, setCountdown4] = useState(0);
+  const maxValue1 = 200; // Set your maximum value here
+  const maxValue2 = 300; // Set your maximum value here
+  const maxValue3 = 400; // Set your maximum value here
+  const maxValue4 = 500; // Set your maximum value here
+  const [hovered, setHovered] = useState(false);
 
-export default function Number() {
+  useEffect(() => {
+    // Function to increment the countdown value
+    const incrementCountdown1 = () => {
+      if (countdown1 < maxValue1) {
+        setCountdown1(countdown1 + 10);
+      }
+    };
+    const incrementCountdown2 = () => {
+      if (countdown2 < maxValue2) {
+        setCountdown2(countdown2 + 10);
+      }
+    };
+    const incrementCountdown3 = () => {
+      if (countdown3 < maxValue3) {
+        setCountdown3(countdown3 + 1);
+      }
+    };
+    const incrementCountdown4 = () => {
+      if (countdown4 < maxValue4) {
+        setCountdown4(countdown4 + 10);
+      }
+    };
+
+    // Start the countdown when the user hovers
+    if (hovered) {
+      const interval1 = setInterval(incrementCountdown1, 50); // Increment every 1 second
+      const interval2 = setInterval(incrementCountdown2, 50); // Increment every 1 second
+      const interval3 = setInterval(incrementCountdown3, 5000); // Increment every 1 second
+      const interval4 = setInterval(incrementCountdown4, 50); // Increment every 1 second
+
+      // Clean up the interval when the component unmounts or when the user stops hovering
+      return () => {
+        clearInterval(interval1);
+        clearInterval(interval2);
+        clearInterval(interval3);
+        clearInterval(interval4);
+
+        // Reset the countdown when not hovering
+      };
+    }
+  }, [countdown1, countdown2, countdown3, countdown4, hovered, maxValue1, maxValue2, maxValue3, maxValue4]);
+
+  const links = [
+    { name: "Open roles", href: "#" },
+    { name: "Internship program", href: "#" },
+    { name: "Our values", href: "#" },
+    { name: "Meet our leadership", href: "#" },
+  ];
+  const stats = [
+    { name: "Offices worldwide", value: countdown1 },
+    { name: "Full-time colleagues", value: countdown2 },
+    { name: "Hours per week", value: countdown3 },
+    { name: "Paid time off", value: countdown4 },
+  ];
+
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+    <div onMouseEnter={() => setHovered(true)} className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
       <img
         src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
         alt=""
@@ -61,7 +113,7 @@ export default function Number() {
             {stats.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse">
                 <dt className="text-base leading-7 text-gray-300">{stat.name}</dt>
-                <dd className="text-2xl font-bold leading-9 tracking-tight text-white">{stat.value}</dd>
+                <dd className="text-2xl font-bold leading-9 tracking-tight text-white"> {stat.value}+ </dd>
               </div>
             ))}
           </dl>
@@ -70,3 +122,4 @@ export default function Number() {
     </div>
   );
 }
+export default Number;
