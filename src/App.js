@@ -1,4 +1,5 @@
 import React from "react";
+import "animate.css";
 import Navbar from "./consultancy/Navbar";
 import Footer from "./consultancy/Footer";
 import Statics from "./consultancy/Number";
@@ -32,10 +33,10 @@ function App(props) {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
-                  <h1 className="text-white font-semibold text-5xl">Your story starts with us.</h1>
-                  <p className="mt-4 text-lg text-gray-300">
-                    This is a simple example of a Landing Page you can build using Tailwind Starter Kit. It features multiple CSS components based on the
-                    Tailwindcss design system.
+                  <h1 className="text-white capitalize font-semibold text-4xl">Unlocking excellence in Tech & Non-Tech Operations.</h1>
+                  <p className="mt-4 text-m text-gray-300">
+                    In the fast-paced world of business, the pursuit of excellence knows no bounds. At Quizaro, we specialize in transforming both tech and
+                    non-tech operations to reach their fullest potential.
                   </p>
                 </div>
               </div>
@@ -59,43 +60,43 @@ function App(props) {
         <section className="pb-20 bg-gray-300 -mt-24">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
-              <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div className="animate__animated animate__backInLeft lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                       <i className="fas fa-award"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Awarded Agency</h6>
+                    <h6 className="text-xl capitalize font-semibold">Cross-Industry Streamlining </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.
+                      Our expertise spans diverse industries, ensuring your operations run seamlessly, delivering optimal performance and cost-efficiency.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="w-full md:w-4/12 px-4 text-center">
+              <div className="animate__animated animate__backInDown w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                       <i className="fas fa-retweet"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Free Revisions</h6>
+                    <h6 className="text-xl capitalize font-semibold">Data-Driven Insights</h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.
+                      Our consultants use cutting-edge analytics and technology for actionable insights for empowering your success.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="pt-6 w-full md:w-4/12 px-4 text-center">
+              <div className="animate__animated animate__backInRight pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
                       <i className="fas fa-fingerprint"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Verified Company</h6>
+                    <h6 className="text-xl capitalize font-semibold">Maximizing Growth</h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!
+                      Our consultancy services are designed to unlock the growth potential in every aspect of your business!
                     </p>
                   </div>
                 </div>
@@ -103,48 +104,28 @@ function App(props) {
             </div>
 
             <div className="flex flex-wrap items-center mt-32">
-              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <div className="animate__animated animate__backInLeft w-full md:w-5/12 px-4 mr-auto ml-auto">
                 <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
                   <i className="fas fa-user-friends text-xl"></i>
                 </div>
-                <h3 className="text-3xl mb-2 font-semibold leading-normal">Working with us is a pleasure</h3>
-                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                  Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript.
+                <h3 className="text-3xl capitalize mb-2 font-semibold leading-normal">Working with us is a pleasure</h3>
+                <p className="text-lg  leading-relaxed mt-4 mb-4 text-gray-700">
+                  At Quizaro, we believe that the journey to excellence should not only be rewarding but enjoyable. Our commitment to your success extends
+                  beyond consultancy; it's about building strong, collaborative partnerships.
                 </p>
-                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                  The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. Just make
-                  sure you enable them first via JavaScript.
+                <p className="text-lg  leading-relaxed mt-0 mb-4 text-gray-700">
+                  Working with Quizaro isn't just business; it's a pleasure. We look forward to embarking on a journey of excellence together.
                 </p>
-                <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation" className="font-bold text-gray-800 mt-8">
-                  Check Tailwind Starter Kit!
-                </a>
               </div>
 
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div className="animate__animated animate__backInRight w-full md:w-4/12 px-4 mr-auto ml-auto">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
                   <img
                     alt="..."
                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
                     className="w-full align-middle rounded-t-lg"
                   />
-                  <blockquote className="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block"
-                      style={{
-                        height: "95px",
-                        top: "-94px",
-                      }}
-                    >
-                      <polygon points="-30,95 583,95 583,65" className="text-pink-600 fill-current"></polygon>
-                    </svg>
-                    <h4 className="text-xl font-bold text-white">Top Notch Services</h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens.
-                    </p>
-                  </blockquote>
+                 
                 </div>
               </div>
             </div>
@@ -168,21 +149,22 @@ function App(props) {
 
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
-              <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+              <div className="animate__animated animate__backInLeft w-full md:w-4/12 ml-auto mr-auto px-4">
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
                   src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
                 />
               </div>
-              <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
-                <div className="md:pr-12">
+              <div className=" animate__animated animate__backInRight w-full md:w-5/12 ml-auto mr-auto px-4">
+                <div className="md:pr-18">
                   <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
                     <i className="fas fa-rocket text-xl"></i>
                   </div>
-                  <h3 className="text-3xl font-semibold">A growing company</h3>
+                  <h3 className="text-3xl capitalize font-semibold">Our Vision</h3>
                   <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                    The extension comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go.
+                    our vision is to lead the way in transforming businesses across industries. We aim to be the trusted partner that empowers organizations to
+                    achieve operational excellence.
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
@@ -193,7 +175,7 @@ function App(props) {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-gray-600">Carefully crafted components</h4>
+                          <h4 className="text-gray-600 capitalize">Trailblazing Transformation</h4>
                         </div>
                       </div>
                     </li>
@@ -205,7 +187,7 @@ function App(props) {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-gray-600">Amazing page examples</h4>
+                          <h4 className="text-gray-600">Innovators of Excellence</h4>
                         </div>
                       </div>
                     </li>
@@ -217,7 +199,7 @@ function App(props) {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-gray-600">Dynamic components</h4>
+                          <h4 className="text-gray-600 capitalize">Empowering Tomorrow's Success</h4>
                         </div>
                       </div>
                     </li>
@@ -232,33 +214,28 @@ function App(props) {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Here are our heroes</h2>
-                <p className="text-lg leading-relaxed m-4 text-gray-600">
-                  According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record maximum.
-                </p>
+                <h2 className="text-4xl capitalize font-semibold">Meet our heroes</h2>
+                <p className="text-lg leading-relaxed m-4 text-gray-600">The Driving Force Behind Excellence. Discover the Team Shaping Your Success.</p>
               </div>
             </div>
             <div className="flex flex-wrap">
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
-                  <img
-                    alt="..."
-                    src={require("./assets/img/team-1-800x800.jpg").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
+                  <img alt="HR Manager" src={"../Images/pradeep1.jpeg"} className="shadow-lg rounded-lg max-w-full mx-auto" style={{ maxWidth: "130px" }} />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Ryan Tompson</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">Web Developer</p>
-                    <div className="mt-6">
-                      <button className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-twitter"></i>
+                    <h5 className="text-xl capitalize font-bold">Prdeep Kumar</h5>
+                    <p className="mt-1 text-m text-gray-500 uppercase font-semibold">HR Manager</p>
+                    <p className="mt-1 text-m text-gray-500  font-semibold">(Quizaro EduTech)</p>
+                    <div className="mt-4">
+                      <button className="bg-blue-900 text-white w-11 h-11 rounded-full outline-none focus:outline-none mr-3 mb-1" type="button">
+                        <a href="https://www.linkedin.com/in/pradeep-kumar-4083b0229/">
+                          <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                        </a>
                       </button>
-                      <button className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                      <button className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-dribbble"></i>
+                      <button className="bg-orange-500 text-white w-12 h-12 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                        <a href="https://www.instagram.com/bp_pk_7117/?igshid=NGVhN2U2NjQ0Yg%3D%3D">
+                          <i className="fab fa-instagram fa-2xl"></i>
+                        </a>
                       </button>
                     </div>
                   </div>
@@ -266,21 +243,22 @@ function App(props) {
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
-                  <img
-                    alt="..."
-                    src={require("./assets/img/team-2-800x800.jpg").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
+                  <img alt="..." src={"../Images/syed.jpeg"} className="shadow-lg rounded-lg max-w-full mx-auto" style={{ maxWidth: "90px" }} />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Romina Hadid</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">Marketing Specialist</p>
-                    <div className="mt-6">
-                      <button className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-google"></i>
+                    <h5 className="text-xl capitalize font-bold">Syed Satham</h5>
+                    <p className="mt-1 text-m text-gray-500 uppercase font-semibold">Hr Manager</p>
+                    <p className="mt-1 text-m text-gray-500  font-semibold">(Quizaro Business Consultancy)</p>
+                    <div className="mt-4">
+                      <button className="bg-blue-900 text-white w-11 h-11 rounded-full outline-none focus:outline-none mr-3 mb-1" type="button">
+                        <a href="https://www.linkedin.com/in/syed-satham-3999b9254/">
+                          <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                        </a>
                       </button>
-                      <button className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-facebook-f"></i>
+                      <button className="bg-orange-500 text-white w-12 h-12 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                        <a href="https://www.instagram.com/syed_satham_/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                          {" "}
+                          <i className="fab fa-instagram fa-2xl"></i>
+                        </a>
                       </button>
                     </div>
                   </div>
@@ -288,52 +266,41 @@ function App(props) {
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
-                  <img
-                    alt="..."
-                    src={require("./assets/img/team-3-800x800.jpg").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
+                  <img alt="..." src={"../Images/suriya1.jpeg"} className="shadow-lg rounded-lg max-w-full mx-auto" style={{ maxWidth: "120px" }} />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Alexa Smith</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">UI/UX Designer</p>
-                    <div className="mt-6">
-                      <button className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-google"></i>
+                    <h5 className="text-xl capitalize font-bold">Suriya Prakash</h5>
+                    <p className="mt-1 text-m text-gray-500 uppercase font-semibold">HR BD Specialist</p>
+                    <div className="mt-4">
+                      <button className="bg-blue-900 text-white w-11 h-11 rounded-full outline-none focus:outline-none mr-3 mb-1" type="button">
+                        <a href="https://www.linkedin.com/in/suriya-prakash-6b5738284/">
+                          <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                        </a>
                       </button>
-                      <button className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-instagram"></i>
+                      <button className="bg-orange-500 text-white w-12 h-12 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                        <a href="https://www.instagram.com/black_pearl_rider_suriya/?igshid=OGQ5ZDc2ODk2ZA%3D%3D">
+                          <i className="fab fa-instagram fa-2xl"></i>
+                        </a>
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
-                    src={require("./assets/img/team-4-470x470.png").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
+                <div className="px-5">
+                  <img alt="..." src={"../Images/joan1.jpeg"} className="shadow-lg rounded-xl max-w-full mx-auto" style={{ maxWidth: "120px" }} />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Jenna Kardi</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">Founder and CEO</p>
-                    <div className="mt-6">
-                      <button className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-dribbble"></i>
+                    <h5 className="text-xl capitalize font-bold">Joan Antony</h5>
+                    <p className="mt-1 text-m text-gray-500 uppercase font-semibold">HR Recruiter</p>
+                    <div className="mt-4">
+                      <button className="bg-blue-900 text-white w-11 h-11 rounded-full outline-none focus:outline-none mr-3 mb-1" type="button">
+                        <a href="https://www.linkedin.com/in/joan-antony-23908a255/">
+                          <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                        </a>
                       </button>
-                      <button className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                        <i className="fab fa-instagram"></i>
+                      <button className="bg-orange-500 text-white w-12 h-12 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                        <a href="https://instagram.com/joan_j_a_s?igshid=NzZlODBkYWE4Ng==">
+                          <i className="fab fa-instagram fa-2xl"></i>
+                        </a>
                       </button>
                     </div>
                   </div>
@@ -361,10 +328,10 @@ function App(props) {
           <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold text-white">Build something</h2>
-                <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                  Put the potentially record low maximum sea ice extent tihs year down to low ice. According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos.
+                <h2 className="text-4xl capitalize font-semibold text-white">Let's Connect</h2>
+                <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-400">
+                  Your success story begins with a conversation. Reach out to us today, and let's start shaping your path to excellence. We're ready to listen,
+                  guide, and transform together
                 </p>
               </div>
             </div>
@@ -373,22 +340,22 @@ function App(props) {
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-medal text-xl"></i>
                 </div>
-                <h6 className="text-xl mt-5 font-semibold text-white">Excelent Services</h6>
-                <p className="mt-2 mb-4 text-gray-500">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h6 className="text-xl mt-5 capitalize font-semibold text-white">Excelent Services</h6>
+                <p className="mt-2 mb-4 text-gray-500"> Elevate your expectations, because we're committed to delivering nothing less.</p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-poll text-xl"></i>
                 </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">Grow your market</h5>
-                <p className="mt-2 mb-4 text-gray-500">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 className="text-xl mt-5 capitalize font-semibold text-white">Grow your Career</h5>
+                <p className="mt-2 mb-4 text-gray-500">Unlock new possibilities and take the next step toward success.</p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-lightbulb text-xl"></i>
                 </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">Launch time</h5>
-                <p className="mt-2 mb-4 text-gray-500">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 className="text-xl mt-5 capitalize font-semibold text-white">Expand Your Network</h5>
+                <p className="mt-2 mb-4 text-gray-400">Connect with industry leaders and innovators for new opportunities and insights.</p>
               </div>
             </div>
           </div>
@@ -399,7 +366,7 @@ function App(props) {
               <div className="w-full lg:w-6/12 px-4">
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
                   <div className="flex-auto p-5 lg:p-10">
-                    <h4 className="text-2xl font-semibold">Want to work with us?</h4>
+                    <h4 className="text-2xl capitalize font-semibold">Want to work with us?</h4>
                     <p className="leading-relaxed mt-1 mb-4 text-gray-600">Complete this form and we will get back to you in 24 hours.</p>
                     <div className="relative w-full mb-3 mt-8">
                       <label className="block uppercase text-gray-700 text-xs font-bold mb-2" htmlFor="full-name">
@@ -413,6 +380,17 @@ function App(props) {
                       />
                     </div>
 
+                    <div className="relative w-full mb-3">
+                      <label className="block uppercase text-gray-700 text-xs font-bold mb-2" htmlFor="email">
+                        Contact No.
+                      </label>
+                      <input
+                        type="text"
+                        className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                        placeholder="Phone Number"
+                        style={{ transition: "all .15s ease" }}
+                      />
+                    </div>
                     <div className="relative w-full mb-3">
                       <label className="block uppercase text-gray-700 text-xs font-bold mb-2" htmlFor="email">
                         Email
@@ -430,7 +408,7 @@ function App(props) {
                         Message
                       </label>
                       <textarea
-                        rows="4"
+                        rows="3"
                         cols="80"
                         className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                         placeholder="Type a message..."

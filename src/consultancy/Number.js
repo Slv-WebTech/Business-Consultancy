@@ -5,32 +5,32 @@ function Number() {
   const [countdown2, setCountdown2] = useState(0);
   const [countdown3, setCountdown3] = useState(0);
   const [countdown4, setCountdown4] = useState(0);
-  const maxValue1 = 200; // Set your maximum value here
-  const maxValue2 = 300; // Set your maximum value here
-  const maxValue3 = 400; // Set your maximum value here
-  const maxValue4 = 500; // Set your maximum value here
+  const maxValue1 = 183; // Set your maximum value here
+  const maxValue2 = 192; // Set your maximum value here
+  const maxValue3 = 246; // Set your maximum value here
+  const maxValue4 = 12; // Set your maximum value here
   const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
     // Function to increment the countdown value
     const incrementCountdown1 = () => {
       if (countdown1 < maxValue1) {
-        setCountdown1(countdown1 + 10);
+        setCountdown1(countdown1 + 6);
       }
     };
     const incrementCountdown2 = () => {
       if (countdown2 < maxValue2) {
-        setCountdown2(countdown2 + 10);
+        setCountdown2(countdown2 + 6);
       }
     };
     const incrementCountdown3 = () => {
       if (countdown3 < maxValue3) {
-        setCountdown3(countdown3 + 1);
+        setCountdown3(countdown3 + 6);
       }
     };
     const incrementCountdown4 = () => {
       if (countdown4 < maxValue4) {
-        setCountdown4(countdown4 + 10);
+        setCountdown4(countdown4 + 1);
       }
     };
 
@@ -38,8 +38,8 @@ function Number() {
     if (hovered) {
       const interval1 = setInterval(incrementCountdown1, 50); // Increment every 1 second
       const interval2 = setInterval(incrementCountdown2, 50); // Increment every 1 second
-      const interval3 = setInterval(incrementCountdown3, 5000); // Increment every 1 second
-      const interval4 = setInterval(incrementCountdown4, 50); // Increment every 1 second
+      const interval3 = setInterval(incrementCountdown3, 50); // Increment every 1 second
+      const interval4 = setInterval(incrementCountdown4, 100); // Increment every 1 second
 
       // Clean up the interval when the component unmounts or when the user stops hovering
       return () => {
@@ -60,7 +60,7 @@ function Number() {
     { name: "Meet our leadership", href: "#" },
   ];
   const stats = [
-    { name: "Offices worldwide", value: countdown1 },
+    { name: "Our Connections", value: countdown1 },
     { name: "Full-time colleagues", value: countdown2 },
     { name: "Hours per week", value: countdown3 },
     { name: "Paid time off", value: countdown4 },
@@ -96,9 +96,10 @@ function Number() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
+          <h2 className="text-4xl font-bold capitalize tracking-tight text-white sm:text-6xl">Work with us</h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+            Join our passionate team dedicated to reshaping industries, driving innovation, and delivering outstanding results. Discover a rewarding career
+            journey with us.
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

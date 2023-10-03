@@ -12,7 +12,8 @@ export default function Navbar(props) {
         <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <a
             className={
-              (props.transparent ? "text-white" : "text-gray-800") + " text-sm font-bold leading-relaxed inline-block mr-4 py-12 whitespace-nowrap uppercase"
+              (props.transparent ? "text-white" : "text-gray-800") +
+              "animate__animated animate__heartBeat  text-sm font-bold leading-relaxed inline-block mr-4 py-12 whitespace-nowrap uppercase"
             }
             href="/home"
           >
