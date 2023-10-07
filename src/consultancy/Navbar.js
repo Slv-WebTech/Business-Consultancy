@@ -7,6 +7,7 @@ export default function Navbar(props) {
       className={
         (props.transparent ? "top-0 absolute z-50 w-full" : "relative shadow-lg bg-white shadow-lg") + " flex flex-wrap items-center justify-between px-2 py-3 "
       }
+      id="Home"
     >
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -40,7 +41,7 @@ export default function Navbar(props) {
                 }
                 href="#pablo"
               >
-                <i className={(props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-facebook text-lg leading-lg "} />
+                <i className={(props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-facebook fa-2xl  text-xl leading-lg "} />
                 <span className="lg:hidden inline-block ml-2">Share</span>
               </a>
             </li>
@@ -51,10 +52,10 @@ export default function Navbar(props) {
                   (props.transparent ? "lg:text-white lg:hover:text-gray-300 text-gray-800" : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="#pablo"
+                href="https://www.linkedin.com/company/quizaro-extendededge/"
               >
-                <i className={(props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-twitter text-lg leading-lg "} />
-                <span className="lg:hidden inline-block ml-2">Tweet</span>
+                <i className={(props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-linkedin fa-2xl text-xl leading-lg "} />
+                <span className="lg:hidden inline-block ml-2">Linkedin</span>
               </a>
             </li>
 
@@ -64,10 +65,10 @@ export default function Navbar(props) {
                   (props.transparent ? "lg:text-white lg:hover:text-gray-300 text-gray-800" : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="#pablo"
+                href="https://www.instagram.com/quizaroextendededge/?hl=en"
               >
-                <i className={(props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-github text-lg leading-lg "} />
-                <span className="lg:hidden inline-block ml-2">Star</span>
+                <i className={(props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-instagram fa-2xl text-xl leading-lg "} />
+                <span className="lg:hidden inline-block ml-2">Instagram</span>
               </a>
             </li>
           </ul>

@@ -39,7 +39,7 @@ function Number() {
       const interval1 = setInterval(incrementCountdown1, 50); // Increment every 1 second
       const interval2 = setInterval(incrementCountdown2, 50); // Increment every 1 second
       const interval3 = setInterval(incrementCountdown3, 50); // Increment every 1 second
-      const interval4 = setInterval(incrementCountdown4, 100); // Increment every 1 second
+      const interval4 = setInterval(incrementCountdown4, 50); // Increment every 1 second
 
       // Clean up the interval when the component unmounts or when the user stops hovering
       return () => {
@@ -55,9 +55,9 @@ function Number() {
 
   const links = [
     { name: "Open roles", href: "#" },
-    { name: "Internship program", href: "#" },
-    { name: "Our values", href: "#" },
-    { name: "Meet our leadership", href: "#" },
+    { name: "Internship program", href: "https://www.quizaro.co.in/" },
+    { name: "Our values", href: "#vision" },
+    { name: "Meet our leadership", href: "#team" },
   ];
   const stats = [
     { name: "Our Connections", value: countdown1 },
@@ -67,7 +67,7 @@ function Number() {
   ];
 
   return (
-    <div onMouseEnter={() => setHovered(true)} className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+    <div onMouseEnter={() => setHovered(true)} className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32" id="statics">
       <img
         src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
         alt=""
