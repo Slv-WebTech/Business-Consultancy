@@ -1,4 +1,7 @@
 import React from "react";
+import AboutUs from "./AboutUs";
+import Terms from "./Terms";
+import Privacy from "./privacy";
 
 export default function Footer() {
   return (
@@ -42,19 +45,13 @@ export default function Footer() {
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
                 <ul className="list-unstyled">
                   <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://quizaro.in/terms-and-conditions">
-                      Terms & Conditions
-                    </a>
+                    <Terms />
                   </li>
                   <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://quizaro.in/privacy-and-policy">
-                      Privacy Policy
-                    </a>
+                    <Privacy />
                   </li>
                   <li>
-                    <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://quizaro.in/we-are">
-                      About Us
-                    </a>
+                    <AboutUs />
                   </li>
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="#Blogs">
