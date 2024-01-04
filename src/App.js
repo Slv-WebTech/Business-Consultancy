@@ -234,7 +234,12 @@ const Form = () => {
             <div className="flex flex-wrap">
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
-                  <img alt="HR Manager" src={"../Images/pradeep1.jpeg"} className="shadow-lg rounded-lg max-w-full mx-auto" style={{ maxWidth: "130px" }} />
+                  <img
+                    alt="HR Manager"
+                    src={process.env.PUBLIC_URL + "/Images/pradeep1.jpeg"}
+                    className="shadow-lg rounded-lg max-w-full mx-auto"
+                    style={{ maxWidth: "130px" }}
+                  />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl capitalize font-bold">Prdeep Kumar</h5>
                     <p className="mt-1 text-m text-gray-500 uppercase font-semibold">HR Manager</p>
@@ -256,7 +261,12 @@ const Form = () => {
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
-                  <img alt="..." src={"../Images/syed.jpeg"} className="shadow-lg rounded-lg max-w-full mx-auto" style={{ maxWidth: "90px" }} />
+                  <img
+                    alt="..."
+                    src={process.env.PUBLIC_URL + "/Images/syed.jpeg"}
+                    className="shadow-lg rounded-lg max-w-full mx-auto"
+                    style={{ maxWidth: "90px" }}
+                  />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl capitalize font-bold">Syed Satham</h5>
                     <p className="mt-1 text-m text-gray-500 uppercase font-semibold">Hr Manager</p>
@@ -279,7 +289,12 @@ const Form = () => {
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
-                  <img alt="..." src={"../Images/suriya1.jpeg"} className="shadow-lg rounded-lg max-w-full mx-auto" style={{ maxWidth: "120px" }} />
+                  <img
+                    alt="..."
+                    src={process.env.PUBLIC_URL + "/Images/suriya1.jpeg"}
+                    className="shadow-lg rounded-lg max-w-full mx-auto"
+                    style={{ maxWidth: "120px" }}
+                  />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl capitalize font-bold">Suriya Prakash</h5>
                     <p className="mt-1 text-m text-gray-500 uppercase font-semibold">HR BD Specialist</p>
@@ -300,7 +315,12 @@ const Form = () => {
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-5">
-                  <img alt="..." src={"../Images/joan1.jpeg"} className="shadow-lg rounded-xl max-w-full mx-auto" style={{ maxWidth: "120px" }} />
+                  <img
+                    alt="..."
+                    src={process.env.PUBLIC_URL + "/Images/joan1.jpeg"}
+                    className="shadow-lg rounded-xl max-w-full mx-auto"
+                    style={{ maxWidth: "120px" }}
+                  />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl capitalize font-bold">Joan Antony</h5>
                     <p className="mt-1 text-m text-gray-500 uppercase font-semibold">HR Recruiter</p>

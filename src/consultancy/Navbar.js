@@ -18,7 +18,7 @@ export default function Navbar(props) {
             }
             href="/home"
           >
-            <img src="../Images/QBCS.png" width={190} className={"invert"} alt="Quizaro" />
+            <img src={process.env.PUBLIC_URL + "/Images/QBCS.png"} width={190} className={"invert"} alt="Quizaro" />
           </a>
           <button
             className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"

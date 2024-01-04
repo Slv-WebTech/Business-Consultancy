@@ -24,27 +24,45 @@ export default function Collaborations() {
         <div className="mx-auto mt-10  max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-1">
           <Slider {...settings}>
             <div>
-              <img className="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="../Images/Microsoft.png" alt="Transistor" width={158} height={48} />
+              <img
+                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+                src={process.env.PUBLIC_URL + "/Images/microsoft.png"}
+                alt="Transistor"
+                width={158}
+                height={48}
+              />
             </div>
             <div>
-              <img className="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="../Images/nirmaan_logo.png" alt="Reform" width={158} height={48} />
+              <img
+                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+                src={process.env.PUBLIC_URL + "/Images/nirmaan_logo.png"}
+                alt="Reform"
+                width={158}
+                height={48}
+              />
             </div>
             <div>
               <img
                 className="col-span-2 max-h-20 w-full object-contain sm:col-start-2 lg:col-span-1"
-                src="../Images/coding.jpeg"
+                src={process.env.PUBLIC_URL + "/Images/coding.jpeg"}
                 alt="SavvyCal"
                 width={158}
                 height={48}
               />
             </div>
             <div>
-              <img className="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="../Images/tc.jpeg" alt="Tuple" width={158} height={48} />
+              <img
+                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+                src={process.env.PUBLIC_URL + "/Images/tc.jpeg"}
+                alt="Tuple"
+                width={158}
+                height={48}
+              />
             </div>
             <div>
               <img
                 className="col-span-2 col-start-2 max-h-20 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="../Images/EBIXFOREX.NS.png"
+                src={process.env.PUBLIC_URL + "/Images/EBIXFOREX.NS.png"}
                 alt="Statamic"
                 width={158}
                 height={48}
@@ -53,7 +71,7 @@ export default function Collaborations() {
             <div>
               <img
                 className="col-span-2 col-start-2 max-h-20 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="../Images/altruist.jpg"
+                src={process.env.PUBLIC_URL + "/Images/altruist.jpg"}
                 alt="Statamic"
                 width={158}
                 height={48}
@@ -62,7 +80,7 @@ export default function Collaborations() {
             <div>
               <img
                 className="col-span-2 col-start-2 max-h-20 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="../Images/jindalx.png"
+                src={process.env.PUBLIC_URL + "/Images/jindalx.png"}
                 alt="Statamic"
                 width={158}
                 height={48}

@@ -75,7 +75,7 @@ export default function Footer() {
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-md text-gray-600 font-semibold py-1">
               Copyright © {new Date().getFullYear()} Quizaro ExtendedEdge by{" "}
-              <a href="https://github.com/Slv1-webpage" className="text-gray-900 hover:text-black-900">
+              <a href="https://github.com/Slv-WebTech" className="text-gray-900 hover:text-black-900">
                 Slv Web-Tech
               </a>
               .

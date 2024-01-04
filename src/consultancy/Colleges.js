@@ -56,55 +56,55 @@ export default function Collegeslist() {
 
         <Slider {...settings}>
           <div className="flex items-center gap-x-6 ">
-            <img className="h-30 w-76" src="../Images/sastra.jpeg" alt="" />
+            <img className="h-30 w-76" src={process.env.PUBLIC_URL + "/Images/sastra.jpeg"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6">
-            <img className="h-36 w-76 ml-6" src="../Images/ecell.png" alt="" />
+            <img className="h-36 w-76 ml-6" src={process.env.PUBLIC_URL + "/Images/ecell.png"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6 ">
-            <img className="h-30 w-76" src="../Images/snu.jpeg" alt="" />
+            <img className="h-30 w-76" src={process.env.PUBLIC_URL + "/Images/snu.jpeg"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6 ml-6 ">
-            <img className="h-30 w-76 mt-6" src="../Images/alva.jpeg" alt="" />
+            <img className="h-30 w-76 mt-6" src={process.env.PUBLIC_URL + "/Images/alva.jpeg"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6 ml-12">
-            <img className="h-36 w-46" src="../Images/jgi.jpeg" alt="" />
+            <img className="h-36 w-46" src={process.env.PUBLIC_URL + "/Images/jgi.jpeg"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6 ">
-            <img className="h-30 w-76 mt-6" src="../Images/anupama.jpeg" alt="" />
+            <img className="h-30 w-76 mt-6" src={process.env.PUBLIC_URL + "/Images/anupama.jpeg"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6">
-            <img className="h-30 w-76" src="../Images/Chaitanya.png" alt="" />
+            <img className="h-30 w-76" src={process.env.PUBLIC_URL + "/Images/Chaitanya.png"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6">
-            <img className="h-30 w-76 mt-6" src="../Images/rajivgandhi.png" alt="" />
+            <img className="h-30 w-76 mt-6" src={process.env.PUBLIC_URL + "/Images/rajivgandhi.png"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6">
-            <img className="h-30 w-76" src="../Images/lpu.png" alt="" />
+            <img className="h-30 w-76" src={process.env.PUBLIC_URL + "/Images/lpu.png"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6 ml-12">
-            <img className="h-36 w-36" src="../Images/acharya.jpeg" alt="" />
+            <img className="h-36 w-36" src={process.env.PUBLIC_URL + "/Images/acharya.jpeg"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6">
-            <img className="h-30 w-76 mt-6" src="../Images/shanmuga.png" alt="" />
+            <img className="h-30 w-76 mt-6" src={process.env.PUBLIC_URL + "/Images/shanmuga.png"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6 ">
-            <img className="h-30 w-76 mt-6" src="../Images/sant francis.png" alt="" />
+            <img className="h-30 w-76 mt-6" src={process.env.PUBLIC_URL + "/Images/sant francis.png"} alt="" />
           </div>
 
           <div className="flex items-center gap-x-6">
-            <img className="h-30 w-76" src="../Images/global1.jpg" alt="" />
+            <img className="h-30 w-76" src={process.env.PUBLIC_URL + "/Images/global1.jpg"} alt="" />
           </div>
         </Slider>
       </div>
