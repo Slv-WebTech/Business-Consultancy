@@ -15,7 +15,7 @@ export default function Collaborations() {
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    // pauseOnHover: true,
+    pauseOnHover: true,
   };
   return (
     <div className="bg-white py-24 sm:py-32" id="collaborations">

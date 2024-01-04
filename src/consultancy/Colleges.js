@@ -14,7 +14,7 @@ export default function Collegeslist() {
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    // pauseOnHover: true,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,

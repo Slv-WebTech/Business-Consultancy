@@ -19,7 +19,7 @@ export default function AlertDialog() {
 
   return (
     <div>
-      <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"  onClick={handleTermsOpen}>
+      <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" onClick={handleTermsOpen}>
         Terms & Conditions
       </a>
       <Dialog open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
