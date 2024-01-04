@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/consultancy-website/static/css/main.a6a9a79a.css",
-    "main.js": "/consultancy-website/static/js/main.90beaddc.js",
+    "main.js": "/consultancy-website/static/js/main.239de02e.js",
     "static/js/787.d56c4dbc.chunk.js": "/consultancy-website/static/js/787.d56c4dbc.chunk.js",
     "static/media/fa-solid-900.ttf": "/consultancy-website/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
     "static/media/fa-brands-400.ttf": "/consultancy-website/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
@@ -17,11 +17,11 @@
     "index.html": "/consultancy-website/index.html",
     "static/media/slick.woff": "/consultancy-website/static/media/slick.295183786cd8a1389865.woff",
     "main.a6a9a79a.css.map": "/consultancy-website/static/css/main.a6a9a79a.css.map",
-    "main.90beaddc.js.map": "/consultancy-website/static/js/main.90beaddc.js.map",
+    "main.239de02e.js.map": "/consultancy-website/static/js/main.239de02e.js.map",
     "787.d56c4dbc.chunk.js.map": "/consultancy-website/static/js/787.d56c4dbc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a6a9a79a.css",
-    "static/js/main.90beaddc.js"
+    "static/js/main.239de02e.js"
   ]
 }
