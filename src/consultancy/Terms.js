@@ -19,9 +19,9 @@ export default function AlertDialog() {
 
   return (
     <div>
-      <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" onClick={handleTermsOpen}>
+      <button type="button" className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" onClick={handleTermsOpen}>
         Terms & Conditions
-      </a>
+      </button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
         <DialogTitle id="alert-dialog-title">Terms & Conditions</DialogTitle>
         <DialogContent>

@@ -23,26 +23,26 @@ export default function Events() {
                         <img src={process.env.PUBLIC_URL + "/Images/Pic-1.jpg"} alt="" className="h-full w-full object-cover object-center" />
                       </div>
                       <div className="h-64 w-54 overflow-hidden rounded-lg">
-                        <img src={process.env.PUBLIC_URL + "/Images/Pic-2.jpeg"} alt="" className="h-full w-full object-cover object-center" />
+                        <img src={process.env.PUBLIC_URL + "/Images/pic-2.jpeg"} alt="" className="h-full w-full object-cover object-center" />
                       </div>
                     </div>
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img src={process.env.PUBLIC_URL + "/Images/Pic-3.jpeg"} alt="" className="h-full w-full object-cover object-center" />
+                        <img src={process.env.PUBLIC_URL + "/Images/pic-3.jpeg"} alt="" className="h-full w-full object-cover object-center" />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img src={process.env.PUBLIC_URL + "/Images/Pic-4.jpeg"} alt="" className="h-full w-full object-cover object-center" />
+                        <img src={process.env.PUBLIC_URL + "/Images/pic-4.jpeg"} alt="" className="h-full w-full object-cover object-center" />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img src={process.env.PUBLIC_URL + "/Images/Pic-5.jpeg"} alt="" className="h-full w-full object-cover object-center" />
+                        <img src={process.env.PUBLIC_URL + "/Images/pic-5.jpeg"} alt="" className="h-full w-full object-cover object-center" />
                       </div>
                     </div>
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img src={process.env.PUBLIC_URL + "/Images/Pic-6.jpeg"} alt="" className="h-full w-full object-cover object-center" />
+                        <img src={process.env.PUBLIC_URL + "/Images/pic-6.jpeg"} alt="" className="h-full w-full object-cover object-center" />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img src={process.env.PUBLIC_URL + "/Images/Pic-7.jpg"} alt="" className="h-full w-full object-cover object-center" />
+                        <img src={process.env.PUBLIC_URL + "/Images/pic-7.jpg"} alt="" className="h-full w-full object-cover object-center" />
                       </div>
                     </div>
                   </div>
