@@ -1,87 +1,51 @@
 # Business-Consultancy
-## A Comprehensive Business Consultancy Web Application
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Stars](https://img.shields.io/github/stars/Slv-WebTech/Business-Consultancy?style=social)](https://github.com/Slv-WebTech/Business-Consultancy/stargazers)
-[![Open Issues](https://img.shields.io/github/issues/Slv-WebTech/Business-Consultancy)](https://github.com/Slv-WebTech/Business-Consultancy/issues)
+A front-end website for a business consultancy, built with React. It presents the consultancy's services, collaborations, colleges, events, blogs and contact information.
 
-This project aims to provide a robust and scalable web application for business consultancy services, leveraging the power of React and a range of dependencies to deliver a seamless user experience.
+Live site: https://slv-webtech.github.io/Business-Consultancy/
 
-### Why This Project?
-The goal of this project is to create a comprehensive web application that caters to the needs of business consultancy services, providing a user-friendly interface and a robust backend to manage various aspects of the business.
+## Features
 
-### 📚 Table of Contents
-1. [Features](#features)
-2. [Tech Stack](#tech-stack)
-3. [Installation](#installation)
-4. [Environment Variables](#environment-variables)
-5. [Usage](#usage)
-6. [Project Structure](#project-structure)
-7. [Contributing](#contributing)
-8. [Testing](#testing)
-9. [License](#license)
-10. [Feedback](#feedback)
-11. [Show Your Support](#show-your-support)
+- Components for Home, About Us, Services, Collaborations, Colleges, Events, Blogs and statistics (numbers) sections
+- Terms and Privacy Policy content
+- Contact form that submits via a `fetch` POST request to an external form-handling endpoint
+- Styled with Tailwind CSS utility classes and Material UI components
 
-### ✨ Features
-* User-friendly interface
-* Robust backend to manage business consultancy services
-* Integration with various dependencies for a seamless user experience
-* Support for multiple browsers and devices
+## Tech Stack
 
-### 🛠️ Tech Stack
-| Frontend | Backend | Tools | APIs |
-| --- | --- | --- | --- |
-| React | - | Webpack, Babel | - |
-| Emotion | - | ESLint, Jest | - |
-| Material-UI | - | GitHub Pages | - |
+- React (Create React App / react-scripts)
+- Tailwind CSS
+- Material UI (`@mui/material`) with Emotion and styled-components
+- Headless UI, Heroicons, Font Awesome, animate.css
+- Carousels: react-slick, slick-carousel, react-slideshow-image
+- Hosting and deployment: GitHub Pages, published with the `gh-pages` package; GitHub Pages deployments run through GitHub's built-in `pages-build-deployment` GitHub Actions workflow
 
-### 📦 Installation
+This is a client-side application: there is no backend or server code in this repository.
+
+## Getting Started
+
 1. Clone the repository: `git clone https://github.com/Slv-WebTech/Business-Consultancy.git`
 2. Install dependencies: `npm install`
-3. Start the application: `npm start`
+3. Start the development server: `npm start` (opens http://localhost:3000)
 
-### ⚙️ Environment Variables
-| Variable | Sample Value |
+## Scripts
+
+| Command | Description |
 | --- | --- |
-| REACT_APP_API_URL | `https://api.example.com` |
-| REACT_APP_API_KEY | `YOUR_API_KEY` |
+| `npm start` | Run the app in development mode |
+| `npm run build` | Create a production build in the `build` folder |
+| `npm test` | Run the Create React App test runner |
+| `npm run deploy` | Build and publish the `build` folder to the `gh-pages` branch (GitHub Pages) |
 
-### 🚀 Usage
-1. Start the application: `npm start`
-2. Open the application in your browser: `http://localhost:3000`
-3. Interact with the application to explore its features
+## Project Structure
 
-### 📁 Project Structure
-```markdown
-Business-Consultancy/
-├── public/
-├── src/
-│   ├── components/
-│   ├── containers/
-│   ├── images/
-│   ├── index.js
-│   ├── App.js
-│   ├── reportWebVitals.js
-│   └── ...
-├── package.json
-└── ...
 ```
-
-### 🤝 Contributing
-1. Fork the repository: `git fork https://github.com/Slv-WebTech/Business-Consultancy.git`
-2. Create a new branch: `git branch feature/new-feature`
-3. Make changes and commit: `git commit -m "New feature"`
-4. Open a pull request: `git push origin feature/new-feature`
-
-### 🧪 Testing
-This project uses Jest and ESLint for testing and linting. To run tests, use the command: `npm test`
-
-### 📄 License
-This project is licensed under the MIT License.
-
-### 💬 Feedback
-To provide feedback or open an issue, please visit the [Issues](https://github.com/Slv-WebTech/Business-Consultancy/issues) page.
-
-### 🌟 Show Your Support
-If you find this project useful, please consider starring the repository: [Star](https://github.com/Slv-WebTech/Business-Consultancy/stargazers)
+public/              index.html, manifest.json, Images/
+src/
+  index.js           Application entry point
+  App.js             Main page composition and contact form
+  Home.js
+  consultancy/       AboutUs, Blogs, Collaborations, Colleges, Events,
+                     Footer, Home, Navbar, Number, Services, Terms, privacy
+tailwind.config.js   Tailwind CSS configuration
+```
