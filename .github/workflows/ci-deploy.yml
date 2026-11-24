@@ -1,0 +1,53 @@
+name: CI and deploy
+
+# Every push and pull request is built with the same command used for production (CI=true makes
+# Create React App fail on lint warnings). A push to master then publishes the build to the
+# gh-pages branch, which is what GitHub Pages serves for this site.
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Build (lint warnings fail the build)
+        run: npm run build
+        env:
+          CI: "true"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: build
+          retention-days: 7
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # pushes the gh-pages branch
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Publish build/ to the gh-pages branch
+        run: >
+          npx gh-pages -d build
+          --repo "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          --user "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          --message "deploy: ${{ github.sha }}"

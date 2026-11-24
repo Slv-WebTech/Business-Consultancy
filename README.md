@@ -18,7 +18,7 @@ Live site: https://slv-webtech.github.io/Business-Consultancy/
 - Material UI (`@mui/material`) with Emotion and styled-components
 - Headless UI, Heroicons, Font Awesome, animate.css
 - Carousels: react-slick, slick-carousel, react-slideshow-image
-- Hosting and deployment: GitHub Pages, published with the `gh-pages` package; GitHub Pages deployments run through GitHub's built-in `pages-build-deployment` GitHub Actions workflow
+- Hosting and deployment: GitHub Pages. A GitHub Actions workflow (`.github/workflows/ci-deploy.yml`) builds every push and pull request with `CI=true` (lint warnings fail the build) and, on a push to `master`, publishes `build/` to the `gh-pages` branch that Pages serves; `npm run deploy` still does the same by hand. Tests are not part of CI yet: the only test is the default Create React App one and it currently fails to import `App.js`.
 
 This is a client-side application: there is no backend or server code in this repository.
 
